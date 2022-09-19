@@ -1,0 +1,17 @@
+.card-body{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #D1D5DB;
+    align-items: center;
+    text-align: center;
+}
+
+.user-pict{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(315deg, #4FA0FF 0%, #83F8FF 100%);
+}

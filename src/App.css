@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+input{
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  padding-right: 0;
+  width: 50%;
+  border: 1px solid #D1D5DB;
+}
+input::placeholder{
+  color: #D1D5DB;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn{
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  width: fit-content;
+  font-weight: 600;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-cancel{
+  border: 1px solid #D1D5DB;
+  background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.btn-submit{
+  background-color: #4F46E5;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-generate{
+  background: rgba(224, 231, 255, 1);
+  color: #4F46E5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.form-wrapper{
+  padding: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70vw;
+  /* background-color: aqua; */
+}
+.gray{
+  color: #6B7280;
+}
+
+.button-section{
+  display: flex;
+  justify-content: space-between;
+}
+.d-flex{
+  display: flex;
+}
+.line{
+  width: 45%;
+  height: 1px;
+  background-color: #6B7280;
+}
+.clear-user{
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  width: 30%;
+  cursor: pointer;
 }
