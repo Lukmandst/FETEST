@@ -47,7 +47,7 @@ function App() {
         console.log(result.data.results[0]);
         let fullname = `${result.data.results[0].name.title}. ${result.data.results[0].name.first} ${result.data.results[0].name.last}`;
         let email = result.data.results[0].email;
-        let dob = result.data.results[0].dob.date;
+        let dob = new Date( result.data.results[0].dob.date).toLocaleDateString();
         let address = result.data.results[0].location.city;
         let phone = result.data.results[0].phone;
         let password = result.data.results[0].login.password;

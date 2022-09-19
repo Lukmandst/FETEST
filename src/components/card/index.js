@@ -5,9 +5,18 @@ function Card({ name, email, dob, address, phone, pass, picture }) {
   const [active, setActive] = useState('name');
   return (
     <div className='card-body'>
-      
       {!picture ? (
-        <div className='user-pict' style={{ width: '120px', height: '120px', borderRadius: '120px', fontSize:'40px' }}>
+        <div
+          className='user-pict'
+          style={{
+            width: '120px',
+            height: '120px',
+            borderRadius: '120px',
+            fontSize: '40px',
+            fontWeight: '600',
+            color: 'white',
+          }}
+        >
           {name?.charAt(0)}
         </div>
       ) : (
